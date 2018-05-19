@@ -1,7 +1,7 @@
 class Enemy {
     constructor(){
         this.sprite = 'images/enemy-bug.png';
-        this.speed = 100 + Math.floor(Math.random() * 300);
+        this.speed = 100 + Math.random() * 300;
         this.y = 45 + (85 * Math.floor(Math.random() * 3));
         this.x = -200;
     }
@@ -11,7 +11,7 @@ class Enemy {
         if (this.x >= 600) {
             this.x = -200;
             this.y = 45 + (85 * Math.floor(Math.random() * 3));
-            this.speed = 100 + Math.floor(Math.random() * 300);
+            this.speed = 100 + Math.random() * 300;
         }
     }
 
@@ -74,7 +74,7 @@ class Player {
 
 const allEnemies = (() => {
     let arr = [];
-    for(let i = 0; i < 5; i++) {
+    for(let i = 0; i < 6; i++) {
         const enemy = new Enemy();
         arr.push(enemy);
     }
