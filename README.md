@@ -1,6 +1,18 @@
-frontend-nanodegree-arcade-game
-===============================
+#Classic Arcade Game Clone
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+This is my object-oriented JavaScript project from Udacity's Web Front-end Advanced Nanodegree, note that I only did the app.js file, the rest of the game files were forked from [here](https://github.com/udacity/frontend-nanodegree-arcade-game).
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+
+## Running the game
+
+Just run the index.html file on the desired web browser after downloading or cloning the game from [this github directory](https://github.com/jose-lehmkuhl/frontend-nanodegree-arcade-game). Please, note that all files must be on their relative paths from the index.html file directory.
+
+
+## How to play
+
+Player wins the game by reaching the water at the top of the screen.
+
+* Move around using the Up, Left, Right and Down arrow keys.
+* Avoid colliding with the enemies(bugs), if you do, you will return to the starting point.
+* Once the player reach the water the game will just reset him/her to the starting position.
+

@@ -103,7 +103,6 @@ const allEnemies = (() => {
     }
     return arr;
 })();
-console.log(allEnemies);
 
 // initializes player;
 const player = new Player();
