@@ -23,12 +23,6 @@ Enemy.prototype.update = function(dt) {
         this.y = 45 + (85 * Math.floor(Math.random() * 3));
         this.speed = 100 + Math.floor(Math.random() * 300);
     }
-    if (this.y === player.y) {
-        if ((this.x - player.x) >= -50 && (this.x - player.x) <= 50){
-            player.y = 385;
-            player.x = 200;
-        }
-    }
 };
 
 // Draw the enemy on the screen, required method for game
@@ -51,7 +45,18 @@ Player.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-    
+    if (this.y === -40) {
+        this.y =385;
+    }
+
+    for (const enemie of allEnemies) {
+        if (enemie.y === this.y) {
+            if ((enemie.x - this.x) >= -50 && (enemie.x - this.x) <= 50){
+                this.y = 385;
+                this.x = 200;
+            }
+        }
+    }
 };
 
 Player.prototype.render = function() {
