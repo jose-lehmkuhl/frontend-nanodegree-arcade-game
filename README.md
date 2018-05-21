@@ -1,6 +1,6 @@
 # Classic Arcade Game Clone
 
-This is my object-oriented JavaScript project from Udacity's Web Front-end Advanced Nanodegree, note that I only did the app.js file, the rest of the game files were forked from [here](https://github.com/udacity/frontend-nanodegree-arcade-game).
+This is my object-oriented JavaScript project from Udacity's Web Front-end Advanced Nanodegree, note that I only did the app.js file and added the modal element in the html, the rest of the game files were forked from [here](https://github.com/udacity/frontend-nanodegree-arcade-game).
 
 
 ## Running the game
